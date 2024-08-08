@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2847/2847502.png">
+</head>
+
+<body>
+    <div>
+        <h1>Sistema de Editora 01.00.00</h1>
+        <hr>
+    </div>
+    <div>
+        <h2>Casdastrar Livros na base de dados</h2>
+        <form action="https://api-aula.up.railway.app/livros" method="POST">
+            <!-- placeholder para por texto de fundo na caixa de texto -->
+            <input placeholder="Nome" type="text" name="title">
+            <input placeholder="Descrição" type="text" name="description">
+            <button>Cadastrar</button>
+        </form>
+    </div>
+    <div>
+        <p>Este formulário irá enviar um comando POST para que a API faça o trabalho dela</p>
+        <p>Neste caso, guardar na base de dados o que estamos enviando aqui</p>
+        <hr>
+    </div>
+    <div>
+        <h2>Mostrar Livros já cadastrados</h2>
+        <form action="https://api-aula.up.railway.app/livros" method="GET">
+            <button>Buscar todos os livros</button>
+        </form>
+    </div>
+    <div>
+        <p>Este formulário irá enviar um comando GET para que a API faça o trabalho dela</p>
+        <p>Neste caso, buscar na base de dados que já estão guardados</p>
+    </div>
+</body>
+<style>
+    h1 {
+        border-radius: 3px;
+        background-color: rgb(91, 180, 129);
+    }
+
+    body {
+        background-color: rgb(172, 194, 194);
+    }
+
+    button {
+        border-radius: 3px;
+    }
+
+    input {
+        border-radius: 3px;
+    }
+</style>
+
+</html>
